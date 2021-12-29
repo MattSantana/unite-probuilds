@@ -1,0 +1,17 @@
+.Wallpaper{
+    background:url('Paper.png');     
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+    background-blend-mode: exclusion;       
+    }
+
+    .bgSearch{
+        background:url('bgSearch.png');     
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-blend-mode:exclusion;       
+        }
+        
+    

@@ -1,0 +1,27 @@
+.logoNavbar {
+  height: 4em;
+  margin-right: 0.4em;
+}
+
+.circle{
+  background-color:#0e1116;
+  width: 60px;
+  height: 60px;
+  margin: 8px; 
+  border-radius: 5em;
+}
+
+.square{
+  background-color:#0e1116;
+  width: 60px;
+  height: 60px;
+  margin: 8px; 
+  margin-bottom: 2em;
+}
+.stats{
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
