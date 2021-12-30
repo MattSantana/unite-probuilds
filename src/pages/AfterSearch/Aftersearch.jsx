@@ -1,7 +1,7 @@
 import React from "react";
-import Appbar from "../../Components/Appbar";
+import Appbar from "../../components/Appbar";
 import Container from "@mui/material/Container";
-import CardSearch from "../../Components/CardSearch";
+import CardSearch from "../../components/CardSearch";
 import Typography from "@mui/material/Typography";
 
 export default function Aftersearch() {

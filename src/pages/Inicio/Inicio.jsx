@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import Appbar from "../../Components/Appbar";
+import Appbar from "../../components/Appbar";
 import Typography from "@mui/material/Typography";
 import Logo from '../img/UNITE2.png';
 import imgWallpaper from "../img/Paper.png";
