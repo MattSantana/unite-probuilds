@@ -1,8 +1,8 @@
 import React from "react";
-import Appbar from "../../components/Appbar";
-import CardBuild from "../../components/CardBuild";
+import Appbar from "../components/Appbar";
+import CardBuild from "../components/CardBuild";
 import Container from "@mui/material/Container";
-import Cardinfo from "../../components/CardInfo";
+import Cardinfo from "../components/CardInfo";
 
 export default function Afterclick() {
   return (

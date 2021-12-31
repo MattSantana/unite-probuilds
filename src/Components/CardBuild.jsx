@@ -4,8 +4,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Lizard from "./img/lizard.jpg";
-import "./img/Logo.css";
+import Lizard from "../assets/lizard.jpg";
+import "../assets/Logo.css";
 import Circles from "./Circles";
 import Squares from "./Squares";
 

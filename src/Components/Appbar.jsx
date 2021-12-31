@@ -14,9 +14,9 @@ import MenuItem from "@mui/material/MenuItem";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import Logo from "./img/UNITE.png";
+import Logo from "../assets/UNITE.png";
 
-import "./img/Logo.css";
+import "../assets//Logo.css";
 import { Link } from "react-router-dom";
 
 const pages = ["Sobre o App", "Parceiros"];
@@ -86,21 +86,12 @@ const Appbar = (props) => {
     <AppBar style={{ backgroundColor: "rgb(14,17,22,0.1)" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Link
-          to='/'      
-          > 
-          <img className="logoNavbar" src={Logo} />
+          <Link to="/">
+            <img className="logoNavbar" src={Logo} />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
+            <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
               <MenuIcon />
             </IconButton>
             <Menu
@@ -120,38 +111,24 @@ const Appbar = (props) => {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            ></Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Link to="/sobre" style={{ textDecoration: 'none' }}>
+              <Button sx={{ my: 2, color: "white", display: "block" }}>Sobre o App</Button>
+            </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-          {props.hideSearch == true ? null:<Search>
-              <SearchIconWrapper>
-                <SearchIcon />
-              </SearchIconWrapper>
-              <StyledInputBase
-                placeholder="Search…"
-                inputProps={{ "aria-label": "search" }}
-              />
-            </Search>}
-          
+            {props.hideSearch == true ? null : (
+              <Search>
+                <SearchIconWrapper>
+                  <SearchIcon />
+                </SearchIconWrapper>
+                <StyledInputBase placeholder="Search…" inputProps={{ "aria-label": "search" }} />
+              </Search>
+            )}
 
             <Menu
               sx={{ mt: "45px" }}

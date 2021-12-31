@@ -4,10 +4,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Pokecard from "./img/pokecardinfo.png";
-import "./img/Logo.css";
+import Pokecard from "../assets/pokecardinfo.png";
+import "../assets/Logo.css";
 import Stats from "./Stats";
-import EvoLine from "./img/evolutionline.png";
+import EvoLine from "../assets/evolutionline.png";
 
 
 export default function CardInfo() {

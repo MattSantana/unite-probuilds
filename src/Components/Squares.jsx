@@ -1,5 +1,5 @@
 import React from 'react';
-import './img/Logo.css';
+import '../assets/Logo.css';
 
 
 export default function Squares() {
