@@ -28,7 +28,7 @@ export default function MediaCard(props) {
       <CardActions sx={{display: 'flex' ,justifyContent:'center'}}>
         <Button size="small" sx={{color: 'white'}}>Compartilhe</Button>
         
-        <Button  size="small" sx={{color: 'white'}}>Aprenda</Button>
+        <Button onClick={event =>  window.location.href='/nome-do-pokemon'} size="small" sx={{color: 'white'}}>Aprenda</Button>
          
       </CardActions>
     </Card>
