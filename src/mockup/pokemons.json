@@ -1,18 +1,65 @@
 [
-    {
-        "name":"Dragonite",
-        "typeOfDamage":"Attack",
-        "class":"Attacker",
-        "baseAttacks":[{
-            "Dratini - Boosted Attack":"Torna-se um ataque intensificado a cada terceiro ataque, lançando água a frente do usuário. Este ataque intensificado causa dano ao Pokémon oponente atingido e reduz o tempo de recarga de todos os movimentos do usuário. O ataque de água também tem o efeito adicional de restaurar o HP do usuário quando atinge"
-        },{
-            "Dragonair - Boosted Attack":"Alterna entre um ataque de água e um ataque elétrico a cada uso. Se o ataque de água acertar, ele ativará o mesmo efeito adicional para o ataque básico intensificado de Dratini. Se o ataque elétrico acertar, ele deixará o Pokémon oponente incapaz de agir por um curto período de tempo."
-        },{
-            "Dragonite - Boosted Attack":"O ataque intensificado alterna entre um ataque de água, elétrico e de fogo, nessa ordem, a cada uso. Se o ataque de água acertar, ele ativará o mesmo efeito adicional para o ataque básico intensificado de Dratini. Se os ataques elétricos acertarem, eles desencadearão os mesmos efeitos adicionais dos ataque básicos de Dragonair. Se o ataque de fogo acertar, ele causa dano adicional ao Pokémon oponente."
-        }],
-        "attacks":[{
-            "Ataque 1 - Twister (Twister)":"Cria um tornado e o libera na direção designada, causando dano a qualquer Pokémon adversário que acertar e diminuindo sua velocidade de movimento por um curto período de tempo."  
-        }]
+  {
+    "name": "Dragonite",
+    "typeOfDamage": "Attack",
+    "class": "All-rounder",
+    "pokemonStyleOfDamege": "Ranged",
+    "evolutionLine": [
+      {
+        "Dratini": "Evolves for Dragonair in level 5",
+        "Dragonair": "Evolves for Dragonite in level 8"
+      }
+    ],
+    "status": [
+      {
+        "Attack": "4 stars",
+        "Resistence": "2.5 stars",
+        "Mobility": "2.5 stars",
+        "Scoring": "3 stars",
+        "Support": "0.5 stars"
+      }
+    ],
+    "attacks": [
+      {
+        "Ataque 1": [
+          {
+            "Twister": "PS: Ao atingir o nível 5, o treinador poderá escolher entre dois movimentos para substituir o Twister, sendo eles:",
+            "Tempo de Recarga": "7,5s"
+          }
+        ],
+
+        "Variante 1 Atk 1": [
+          {
+            "Dragon Dance": "Dragonite se move para direção designada. Além disso, o dano causado por este Pokémon será aumentado por um curto período de tempo, juntamente com um acréssimo de sua velocidade de movimento e velocidade de ataque. Ao causar dano a um Pokémon, o tempo de recarga será reduzido, e cada vez que a habilidade for utilizada, o dano infligido será aumentado em até 3 vezes. No nível 11, este movimento receberá um upgrade, na qual ao utilizar a habilidade próximo à um oponente, sua velocidade de movimento se intensificará ainda ainda mais.",
+            "Tempo de Recarga": "5s"
+          }
+        ],
+        "Variante 2 Atk 1": [
+          {
+            "Extreme Speed": "Dragonite golpeia seu alvo e o arrema ao ar, causando dano e repelindo todos os oponentes na área de efeito. Além disso, a habilidade também diminui temporariamente a velocidade de movimento dos oponentes que atingidos. No nível 11, este movimento receberá um upgrade que removerá os efeitos de lentidão aplicados no momento em que Dragonite usar este movimento.",
+            "Tempo de Recarga": "9s"
+          }
+        ],
+        "Ataque 2": [
+          {
+            "Dragon Breath": "Dragonite disparada um forte sopro na direção designada. Caso a habilidade atina um oponente, o próximo ataque básico do usuário se tornará um ataque intensificado. PS: Ao atingir o nível 8, o treinador poderá escolher entre dois movimentos para substituir o Dragon Breath, sendo eles:",
+            "Tempo de Recarga": "7.5s"
+          }
+        ],
+        "Variante 1 Atk 2": [
+          {
+            "Hyper Beam": "Dragonite ataca com um raio poderoso na direção selecionada. Caso atinja um oponente, seu próximo ataque básico será um ataque intensificado. Além disso, o ataque também irá causar dano nos adversários por que passar, no caminho de projeção da habilidade, causando dano adicional com base em seu HP máximo. O usuário ficará incapacitado de agir por um curto período após utilizar essa habilidade. No nível 13, este movimento receberá um upgrade, reduzindo os dano sofridos por Dragonite durante seu uso, inclusive durante o acúmulo de energia.",
+            "Tempo de Recarga": "8s"
+          }
+        ],
+        "Variante 2 Atk 2": [
+          {
+            "Outrage": "Dragonite ataca pisoteando o chão com força, causando dano a Pokémon oponentes na área de efeito. Além disso, também será ativado um efeito adicional do ataque básico reforçado usado mais recentemente, e sua velocidade de ataque será aumentada durante o efeito. Após isso, o usuário ficará incapacito de agir por um curto período de tempo. ",
+            "Tempo de Recarga": "8s"
+          }
+        ],
         
-    }
+      }
+    ]
+  }
 ]
