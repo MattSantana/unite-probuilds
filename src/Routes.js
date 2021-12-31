@@ -5,7 +5,7 @@ import Inicio from './pages/Inicio/Inicio.jsx'
 import AfterSearch from './pages/AfterSearch/Aftersearch.jsx';
 import AfterClick from './pages/AfterClick/Afterclick.jsx'
 
-export default function Navgation() {
+export default function Navigation() {
   return (
     <BrowserRouter>
       <Routes>
