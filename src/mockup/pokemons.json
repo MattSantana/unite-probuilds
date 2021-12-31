@@ -1,0 +1,18 @@
+[
+    {
+        "name":"Dragonite",
+        "typeOfDamage":"Attack",
+        "class":"Attacker",
+        "baseAttacks":[{
+            "Dratini - Boosted Attack":"Torna-se um ataque intensificado a cada terceiro ataque, lançando água a frente do usuário. Este ataque intensificado causa dano ao Pokémon oponente atingido e reduz o tempo de recarga de todos os movimentos do usuário. O ataque de água também tem o efeito adicional de restaurar o HP do usuário quando atinge"
+        },{
+            "Dragonair - Boosted Attack":"Alterna entre um ataque de água e um ataque elétrico a cada uso. Se o ataque de água acertar, ele ativará o mesmo efeito adicional para o ataque básico intensificado de Dratini. Se o ataque elétrico acertar, ele deixará o Pokémon oponente incapaz de agir por um curto período de tempo."
+        },{
+            "Dragonite - Boosted Attack":"O ataque intensificado alterna entre um ataque de água, elétrico e de fogo, nessa ordem, a cada uso. Se o ataque de água acertar, ele ativará o mesmo efeito adicional para o ataque básico intensificado de Dratini. Se os ataques elétricos acertarem, eles desencadearão os mesmos efeitos adicionais dos ataque básicos de Dragonair. Se o ataque de fogo acertar, ele causa dano adicional ao Pokémon oponente."
+        }],
+        "attacks":[{
+            "Ataque 1 - Twister (Twister)":"Cria um tornado e o libera na direção designada, causando dano a qualquer Pokémon adversário que acertar e diminuindo sua velocidade de movimento por um curto período de tempo."  
+        }]
+        
+    }
+]
