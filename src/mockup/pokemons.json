@@ -4,24 +4,20 @@
     "typeOfDamage": "Attack",
     "class": "All-rounder",
     "pokemonStyleOfDamege": "Ranged",
-    "evolutionLine": [
-      {
-        "Dratini": "Evolves for Dragonair in level 5",
-        "Dragonair": "Evolves for Dragonite in level 8"
-      }
-    ],
-    "status": [
-      {
-        "Attack": "4 stars",
-        "Resistence": "2.5 stars",
-        "Mobility": "2.5 stars",
-        "Scoring": "3 stars",
-        "Support": "0.5 stars"
-      }
-    ],
+    "evolutionLine": {
+      "Dratini": "Evolves for Dragonair in level 5",
+      "Dragonair": "Evolves for Dragonite in level 8"
+    },
+    "status": {
+      "Attack": "4 stars",
+      "Resistence": "2.5 stars",
+      "Mobility": "2.5 stars",
+      "Scoring": "3 stars",
+      "Support": "0.5 stars"
+    },
     "attacks": {
       "Ataque 1": {
-        "Twister": "PS: Ao atingir o nível 5, o treinador poderá escolher entre dois movimentos para substituir o Twister, sendo eles:",
+        "Twister": "PS: Ao atingir o nível 5, o treinador poderá substituir o Twister por: Dragon Dance ou Extreme Speed.",
         "Tempo de Recarga": "7,5s"
       },
       "Variante 1 Atk 1": {
@@ -33,7 +29,7 @@
         "Tempo de Recarga": "9s"
       },
       "Ataque 2": {
-        "Dragon Breath": "Dragonite disparada um forte sopro na direção designada. Caso a habilidade atina um oponente, o próximo ataque básico do usuário se tornará um ataque intensificado. PS: Ao atingir o nível 8, o treinador poderá escolher entre dois movimentos para substituir o Dragon Breath, sendo eles:",
+        "Dragon Breath": "Dragonite disparada um forte sopro na direção designada. Caso a habilidade atina um oponente, o próximo ataque básico do usuário se tornará um ataque intensificado. PS: Ao atingir o nível 8, o treinador poderásubstituir o Dragon Breath por: Hyper Beam ou Outrage.",
         "Tempo de Recarga": "7.5s"
       },
       "Variante 1 Atk 2": {
@@ -43,6 +39,50 @@
       "Variante 2 Atk 2": {
         "Outrage": "Dragonite ataca pisoteando o chão com força, causando dano a Pokémon oponentes na área de efeito. Além disso, também será ativado um efeito adicional do ataque básico reforçado usado mais recentemente, e sua velocidade de ataque será aumentada durante o efeito. Após isso, o usuário ficará incapacito de agir por um curto período de tempo. ",
         "Tempo de Recarga": "8s"
+      }
+    }
+  },
+
+  {
+    "name": "Charizard",
+    "typeOfDamage": "Attack",
+    "class": "All-rounder",
+    "pokemonStyleOfDamege": "Melee",
+    "evolutionLine": {
+      "Charmander": "Evolves for Charmeleon in level 4",
+      "Charmeleon": "Evolves for Charizard in level 9"
+    },
+    "status": {
+      "Attack": "3.5 stars",
+      "Resistence": "3 stars",
+      "Mobility": "2.5 stars",
+      "Scoring": "3 stars",
+      "Support": "0.5 stars"
+    },
+    "attacks": {
+      "Ataque 1": {
+        "Flame Burst": " Charizard cospe uma bola de fogo para atacar seus oponentes, fazendo com que o pokémon atingido receba o efeito de queimação. PS: Ao atingir o nível 5, o treinador poderá substituir o Flame Burst por: Flamethrower ou Fire Punch. ",
+        "Tempo de Recarga": "6s"
+      },
+      "Variante 1 Atk 1": {
+        "Flamethrower": "Charizard dispara uma coluna de fogo para atacar, fazendo com que o pokémon atingido receba o efeito de queimação. No nível 11, este ataque recebe um upgrade, aumentando o dano causado pelo golpe e pela queimadura.",
+        "Tempo de Recarga": "5.5s"
+      },
+      "Variante 2 Atk 1": {
+        "Fire Punch": "Charizard envolve seu punho em fogo para atacar, causando o efeito de queimação em seu alvo. Alémd isso, os pokémon que já estiverem queimados sofrerão mais danos quando golpeados. No nível 11, este movimento sofrerá um upgrade, que terá o tempo de recarga diminuído através do uso de ataques básicos.",
+        "Tempo de Recarga": "6s"
+      },
+      "Ataque 2": {
+        "Fire Spin": "Charizard explode um círculo de fogo em torno do alvo, lhe causando dano contínuo e diminuindo a sua velocidade de movimento por um curto período de tempo. PS: Ao atingir o nível 7, o treinador poderá substituir Fire Spin por: Fire Blast ou Flare Blitz",
+        "Tempo de Recarga": "10s"
+      },
+      "Variante 1 Atk 2": {
+        "Fire Blast": "Charizard lança uma rajada de fogo em forma de '大' para atacar, que causa dano contínuo e cria um círculo no solo que fere os oponentes e diminui a sua velocidade por um curto período. No nível 13 este golpe sofre um upgrade, aumentando o dano causado.",
+        "Tempo de Recarga": "6.5s"
+      },
+      "Variante 2 Atk 2": {
+        "Flare Blitz": "Charizard se envolve em chamas e avança nos inimigos, causando-lhes dano e os arremessando ao ar. No nível 13, este ataque sofre um upgrade que faz com que os inimigos arremessados tenham sua velocidade de movimento reduzida.",
+        "Tempo de Recarga": "10s"
       }
     }
   }
