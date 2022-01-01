@@ -1,30 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Appbar from "../components/Appbar";
 import Container from "@mui/material/Container";
 import CardSearch from "../components/CardSearch";
 import Typography from "@mui/material/Typography";
+import { useSearchParams } from "react-router-dom";
+import allPokemons from "../mockup/pokemons.json";
 
 export default function Aftersearch() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [pokemonData, setPokemonData] = useState();
+
+  useEffect(() => {
+    const searchPokemon = searchParams.get("pokemon");
+    console.log(`O pokemon pesquisado foi: ${searchPokemon} `);
+
+    const filtered = allPokemons.filter((pokemon) => pokemon.name === searchPokemon);
+    setPokemonData(filtered);
+  }, []);
+
   return (
-    <div >
-      <div className='bgSearch'style={{
+    <div>
+      <div
+        className="bgSearch"
+        style={{
           height: "100vh",
           backgroundColor: "#0E1116",
-        }}>
+        }}
+      >
         <Appbar />
         <div>
-          <Container 
-            sx={{           
+          <Container
+            sx={{
               height: "80vh",
-            
             }}
           >
-            <Typography
-              sx={{ marginTop: "0.4em" }}
-              variant="h3"
-              textAlign="start"
-              color="white"
-            >
+            <Typography sx={{ marginTop: "0.4em" }} variant="h3" textAlign="start" color="white">
               Resultados
             </Typography>
 
@@ -52,7 +62,6 @@ export default function Aftersearch() {
                 subtitulo="Entenda a build para jogar com o Charizard como um carry na top lane.
           Confeccionada pelo Head Coach da Guardiões Esports."
               />
-             
             </div>
           </Container>
         </div>

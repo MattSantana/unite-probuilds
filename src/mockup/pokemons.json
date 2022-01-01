@@ -1,6 +1,6 @@
 [
   {
-    "name": "Dragonite",
+    "name": "dragonite",
     "typeOfDamage": "Attack",
     "class": "All-rounder",
     "pokemonStyleOfDamege": "Ranged",
@@ -44,7 +44,7 @@
   },
 
   {
-    "name": "Charizard",
+    "name": "charizard",
     "typeOfDamage": "Attack",
     "class": "All-rounder",
     "pokemonStyleOfDamege": "Melee",

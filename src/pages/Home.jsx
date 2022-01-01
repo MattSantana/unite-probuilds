@@ -15,7 +15,7 @@ export default function Inicio() {
   const keyHandler = (e) => {
     //Esse keycode == 13 é se a tecla apertado do teclado é a de enter!
     if(e.keyCode == 13){
-      navigate("/pesquisa");
+      navigate(`/pesquisa?pokemon=${e.target.value}`);
    }
   }
 
@@ -39,7 +39,7 @@ export default function Inicio() {
           InputLabelProps={{ style: { color: "white" } }}
           style={{ borderBottom: "1px solid white", marginTop:"1em" }}
           id="standard-basic"
-          label={`Pesquise pelas Builds de seu Pokémon`}
+          label={`Pesquise pelo seu Pokémon`}
           onKeyDown={keyHandler}
           fullWidth
         />
