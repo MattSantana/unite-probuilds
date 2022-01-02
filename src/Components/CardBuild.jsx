@@ -35,26 +35,12 @@ export default function CardBuild() {
             Charizard: Carry jungle
           </Typography>
           <Typography variant="body2" color="#0e1116">
-            ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            CARALHO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ESTOU COMENDO O CU DE QUEM ESTÁ LENDO. O PAI É BOM DEMAIS
-            
-         
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Pharetra
+            et ultrices neque ornare. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Et molestie ac feugiat sed lectus vestibulum. Hac habitasse platea dictumst
+            quisque sagittis. Volutpat consequat mauris nunc congue nisi vitae. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Pretium lectus quam id leo. Enim nec dui nunc mattis.
+            Tortor dignissim convallis aenean et tortor.
           </Typography>
+          
         </CardContent>
       </CardActionArea>
     </Card>

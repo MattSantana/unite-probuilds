@@ -15,7 +15,7 @@ export default function Inicio() {
   const keyHandler = (e) => {
     //Esse keycode == 13 é se a tecla apertado do teclado é a de enter!
     if(e.keyCode == 13){
-      navigate(`/pesquisa?pokemon=${e.target.value}`);
+      navigate(`/pokemon?nome=${e.target.value}`);
    }
   }
 

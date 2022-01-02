@@ -10,7 +10,7 @@ import Stats from "./Stats";
 import EvoLine from "../assets/evolutionline.png";
 
 
-export default function CardInfo() {
+export default function CardInfo(props) {
   return (
     <Card sx={{ maxWidth: 420 }}>
       <CardActionArea>
@@ -19,7 +19,7 @@ export default function CardInfo() {
           component="img"
           height="400"
           img
-          src={Pokecard}
+          src={props.pokemonData.image}
         />
         <CardContent sx={{ backgroundColor: "#0e1116" }}>
           <Typography
@@ -29,7 +29,7 @@ export default function CardInfo() {
             variant="h5"
             component="div"
           >
-            Charizard
+            {props.pokemonData.name}
           </Typography>
           <div style={{ display: "flex", justifyContent: "space-around" }}>
             <Stats />

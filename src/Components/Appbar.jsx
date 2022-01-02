@@ -83,7 +83,7 @@ const Appbar = (props) => {
   };
 
   return (
-    <AppBar style={{ backgroundColor: "rgb(14,17,22,0.1)" }} position="static">
+    <AppBar style={{ backgroundColor: "rgb(14,17,22)" }} position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">

@@ -4,20 +4,9 @@ import Container from "@mui/material/Container";
 import CardSearch from "../components/CardSearch";
 import Typography from "@mui/material/Typography";
 import { useSearchParams } from "react-router-dom";
-import allPokemons from "../mockup/pokemons.json";
+
 
 export default function Aftersearch() {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [pokemonData, setPokemonData] = useState();
-
-  useEffect(() => {
-    const searchPokemon = searchParams.get("pokemon");
-    console.log(`O pokemon pesquisado foi: ${searchPokemon} `);
-
-    const filtered = allPokemons.filter((pokemon) => pokemon.name === searchPokemon);
-    setPokemonData(filtered);
-  }, []);
-
   return (
     <div>
       <div
