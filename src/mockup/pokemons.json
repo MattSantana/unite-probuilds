@@ -30,7 +30,7 @@
       "image":"https://lh5.googleusercontent.com/w_MYtLktibur1UwGkrcg3F-PUrQmnCBV_-e3Q6md__CiBnXaHnaZlJp8EbbeygwG-GuaXdSTOP7kqx7ENnQj=w2880-h1528-rw",
       "items":[{
         "name":"muscle band",
-        "atributte":[{
+        "atributtes":[{
           "type":"Ataque",
           "amount":15
           },{
@@ -40,6 +40,19 @@
         "description":"Quando o ataque básico acerta, o dano é aumentado em 3% do HP restante do Pokémon oponente.",
         "type":"helditem",
         "image":"https://static.wixstatic.com/media/89a8c9_dfe725af6eba4ea989ce2298f02ac812~mv2.png/v1/fill/w_262,h_262,al_c,lg_1,q_95/89a8c9_dfe725af6eba4ea989ce2298f02ac812~mv2.webp"
+      },
+      {
+        "name":"shell bell",
+        "atributtes":[{
+          "type":"Ataque",
+          "amount":24
+          },{
+          "type":"Redução de tempo de recarga",
+          "amount":"4,5%"
+        }],
+        "description":"Quando o Pokémon ataca com uma habilidade/movimento, ele recupera um mínimo de 75 de HP. Quanto maior o Sp. Atk. do Pokémon, mais HP ele recupera.",
+        "type":"helditem",
+        "image":"https://static.wixstatic.com/media/89a8c9_c8271b3f1c6545a6ad1ec071d98ac2a6~mv2.png/v1/fill/w_244,h_244,al_c,q_95/89a8c9_c8271b3f1c6545a6ad1ec071d98ac2a6~mv2.webp"
       }],
       "attacks":[{
         "name":"Flame Burst",
