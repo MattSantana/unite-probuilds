@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Appbar from "../components/Appbar";
-import CardBuild from "../components/CardBuild";
+import CardBuild from "../components/CardBuild/CardBuild";
 import Container from "@mui/material/Container";
 import Cardinfo from "../components/CardInfo";
 import { useSearchParams } from "react-router-dom";
@@ -53,18 +53,12 @@ export default function Afterclick() {
               marginBottom: "10em",
             }}
           >
-            <CardBuild pokemonData={pokemonData} />
-            <br />
-            <CardSearch
-              titulo="Charizard Carry Jungle"
-              subtitulo="Entenda a build para jogar com o Charizard como um carry da Jungle.
-          Confeccionada pelo Head Coach da Guardiões Esports."
-            />
+            {pokemonData.builds && pokemonData.builds.map((build) => <CardBuild build={build} />)}
           </Container>
         </div>
       ) : (
-        <div style={{ paddingTop: "1em", backgroundColor: "#0E1116", height:"100vh" }}>
-          <Typography variant="h1" style={{ marginTop: "1em", color:"white" }} align="center">
+        <div style={{ paddingTop: "1em", backgroundColor: "#0E1116", height: "100vh" }}>
+          <Typography variant="h1" style={{ marginTop: "1em", color: "white" }} align="center">
             Pokémon não encontrado!
           </Typography>
           <Typography variant="h3" style={{ color: "#f28524" }} align="center">

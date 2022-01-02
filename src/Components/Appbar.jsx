@@ -16,7 +16,6 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Logo from "../assets/UNITE.png";
 
-import "../assets//Logo.css";
 import { Link } from "react-router-dom";
 
 const pages = ["Sobre o App", "Parceiros"];
@@ -87,7 +86,7 @@ const Appbar = (props) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <img className="logoNavbar" src={Logo} />
+            <img style={{ height: "4em", marginRight: "0.4em" }} src={Logo} />
           </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -115,20 +114,20 @@ const Appbar = (props) => {
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Link to="/sobre" style={{ textDecoration: 'none' }}>
+            <Link to="/sobre" style={{ textDecoration: "none" }}>
               <Button sx={{ my: 2, color: "white", display: "block" }}>Sobre o App</Button>
             </Link>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            {props.hideSearch == true ? null : (
+            {/* {props.hideSearch == true ? null : (
               <Search>
                 <SearchIconWrapper>
                   <SearchIcon />
                 </SearchIconWrapper>
                 <StyledInputBase placeholder="Search…" inputProps={{ "aria-label": "search" }} />
               </Search>
-            )}
+            )} */}
 
             <Menu
               sx={{ mt: "45px" }}

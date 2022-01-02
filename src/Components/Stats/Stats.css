@@ -1,9 +1,9 @@
-.stats{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    background-color: white;
-    border-radius: 1em;
-    margin-bottom: 1em;
-  }
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  background-color: white;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}

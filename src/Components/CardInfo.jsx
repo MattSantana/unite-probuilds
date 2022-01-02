@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Pokecard from "../assets/pokecardinfo.png";
-import "../assets/Logo.css";
 import Stats from "./Stats/Stats";
 import EvoLine from "../assets/evolutionline.png";
 
@@ -26,14 +25,13 @@ export default function CardInfo(props) {
           <Typography textAlign="center" variant="subtitle1" color="white">
             Linha Evolutiva
           </Typography>
-          <img style={{ maxWidth: "30em", marginTop: "1em" }} src={EvoLine} />
+          <img style={{ maxWidth: "30em", marginTop: "1em" }} src={props.pokemonData.evolutionImage} />
           <Typography textAlign="center" variant="subtitle1" color="white">
             Atributos
           </Typography>
 
-          {props.pokemonData.status.map((status) => (
-            <Stats fullwidth />
-          ))}
+          {props.pokemonData.status && props.pokemonData.status.map((status, key) => 
+          <Stats key={key} text={status.type} rating={status.rating} fullwidth />)}
         </CardContent>
       </CardActionArea>
     </Card>
