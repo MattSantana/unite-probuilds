@@ -6,50 +6,34 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Pokecard from "../assets/pokecardinfo.png";
 import "../assets/Logo.css";
-import Stats from "./Stats";
+import Stats from "./Stats/Stats";
 import EvoLine from "../assets/evolutionline.png";
-
 
 export default function CardInfo(props) {
   return (
     <Card sx={{ maxWidth: 420 }}>
       <CardActionArea>
-        <CardMedia
-          sx={{ backgroundColor: "#0e1116" }}
-          component="img"
-          height="400"
-          img
-          src={props.pokemonData.image}
-        />
+        <CardMedia sx={{ backgroundColor: "#0e1116" }} component="img" height="400" img src={props.pokemonData.image} />
         <CardContent sx={{ backgroundColor: "#0e1116" }}>
-          <Typography
-            color="white"
-            textAlign="center"
-            gutterBottom
-            variant="h5"
-            component="div"
-          >
+          <Typography color="white" textAlign="center" gutterBottom variant="h5" component="div">
             {props.pokemonData.name}
           </Typography>
           <div style={{ display: "flex", justifyContent: "space-around" }}>
-            <Stats />
-            <Stats />
-            <Stats />
+            <Stats text={props.pokemonData.typeOfDamage} />
+            <Stats text={props.pokemonData.class} />
+            <Stats text={props.pokemonData.pokemonStyleOfDamege} />
           </div>
-          <Typography textAlign='center' variant="subtitle1" color="white">
-          Linha Evolutiva
+          <Typography textAlign="center" variant="subtitle1" color="white">
+            Linha Evolutiva
           </Typography>
-          <img style={{maxWidth:'30em', marginTop:'1em'}} src={EvoLine}/>
-          <Typography textAlign='center' variant="subtitle1" color="white">
-          Atributos
+          <img style={{ maxWidth: "30em", marginTop: "1em" }} src={EvoLine} />
+          <Typography textAlign="center" variant="subtitle1" color="white">
+            Atributos
           </Typography>
-          <Stats />
-            <Stats />
-            <Stats />
-            <Stats />
-            <Stats />
-            <Stats />
-          
+
+          {props.pokemonData.status.map((status) => (
+            <Stats fullwidth />
+          ))}
         </CardContent>
       </CardActionArea>
     </Card>

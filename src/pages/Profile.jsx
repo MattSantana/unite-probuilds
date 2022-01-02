@@ -6,6 +6,8 @@ import Cardinfo from "../components/CardInfo";
 import { useSearchParams } from "react-router-dom";
 import allPokemons from "../mockup/pokemons.json";
 import CardSearch from "../components/CardSearch";
+import { Box } from "@mui/system";
+import { Typography } from "@mui/material";
 
 export default function Afterclick() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -20,11 +22,13 @@ export default function Afterclick() {
   }, []);
 
   return (
-    <div style={{ height: "auto", backgroundColor: "#0E1116" }}>
+    <div style={{ backgroundColor: "#0E1116" }}>
       <Appbar />
-      {pokemonData.name ? (
+      {pokemonData ? (
         <div
           style={{
+            height: "auto",
+            backgroundColor: "#0E1116",
             display: "flex",
             alignItems: "center",
             marginLeft: "3em",
@@ -59,8 +63,13 @@ export default function Afterclick() {
           </Container>
         </div>
       ) : (
-        <div>
-          <h1>Pokemon não encontrado</h1>
+        <div style={{ paddingTop: "1em", backgroundColor: "#0E1116", height:"100vh" }}>
+          <Typography variant="h1" style={{ marginTop: "1em", color:"white" }} align="center">
+            Pokémon não encontrado!
+          </Typography>
+          <Typography variant="h3" style={{ color: "#f28524" }} align="center">
+            Parece que este Pokémon não existe ou ainda não o cadastramos em nossa base de dados.
+          </Typography>
         </div>
       )}
     </div>
