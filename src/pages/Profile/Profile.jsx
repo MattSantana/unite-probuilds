@@ -6,6 +6,7 @@ import CardPokemonProfile from "../../components/CardPokemonProfile";
 import { useSearchParams } from "react-router-dom";
 import allPokemons from "../../mockup/pokemons.json";
 import { Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 export default function Afterclick() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -23,47 +24,32 @@ export default function Afterclick() {
     <div style={{ backgroundColor: "#0E1116" }}>
       <Appbar />
       {pokemonData ? (
-        <div
-          style={{
-            height: "auto",
-            backgroundColor: "#0E1116",
-            display: "flex",
-            alignItems: "center",
-            marginLeft: "3em",
-            marginTop: "4em",
-          }}
-        >
-          <Container>
-            <CardPokemonProfile pokemonData={pokemonData} />
-          </Container>
+        <Container maxWidth="xg" style={{ marginTop: "5em" }}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} sm={4}>
+              <CardPokemonProfile pokemonData={pokemonData} />
+            </Grid>
 
-          <Container
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              height: "100vh",
-              justifyContent: "center",
-              alignItems: "center",
-              marginRight: "4em",
-              marginBottom: "10em",
-            }}
-          >
-            {pokemonData.builds &&
-              pokemonData.builds.map((build, key) => (
-                <div key={key}>
-                  <CardBuild build={build} />
-                </div>
-              ))}
-          </Container>
-        </div>
+            <Grid item xs={12} sm={5}>
+              {pokemonData.builds &&
+                pokemonData.builds.map((build, key) => (
+                  <div key={key} style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <CardBuild build={build} />
+                  </div>
+                ))}
+            </Grid>
+          </Grid>
+        </Container>
       ) : (
         <div style={{ paddingTop: "1em", backgroundColor: "#0E1116", height: "100vh" }}>
-          <Typography variant="h1" style={{ marginTop: "1em", color: "white" }} align="center">
-            Pokémon não encontrado!
-          </Typography>
-          <Typography variant="h3" style={{ color: "#f28524" }} align="center">
-            Parece que este Pokémon não existe ou ainda não o cadastramos em nossa base de dados.
-          </Typography>
+          <Container maxWidth="lg">
+            <Typography variant="h2" style={{ marginTop: "1em", color: "white" }} align="center">
+              Pokémon não encontrado!
+            </Typography>
+            <Typography variant="h4" style={{ color: "#f28524" }} align="center">
+              Parece que este Pokémon não existe ou ainda não o cadastramos em nossa base de dados.
+            </Typography>
+          </Container>
         </div>
       )}
     </div>
