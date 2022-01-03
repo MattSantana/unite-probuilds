@@ -1,0 +1,20 @@
+.circle {
+  background-color: #0e1116;
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  border-radius: 5em;
+}
+.buildItemContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.buildItemRow {
+  display: flex;
+}
+.buildItem {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+}

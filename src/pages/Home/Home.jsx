@@ -2,11 +2,9 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import Appbar from "../components/Appbar";
-import Typography from "@mui/material/Typography";
-import Logo from "../assets/UNITE2.png";
-import imgWallpaper from "../assets/Paper.png";
-import "../assets/Wallpaper.css";
+import Appbar from "../../components/Appbar";
+import Logo from "../../assets/UNITE2.png";
+import "../../assets/Wallpaper.css";
 import { useNavigate } from 'react-router-dom';
 
 export default function Inicio() {

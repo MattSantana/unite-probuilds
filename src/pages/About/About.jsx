@@ -1,9 +1,6 @@
-import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Grid } from "@mui/material";
 import React from "react";
-import Appbar from "../components/Appbar";
-import { Container } from "@mui/material";
-import Logo from "../assets/UNITE2.png";
+import Appbar from "../../components/Appbar";
 
 export default function About() {
   return (
