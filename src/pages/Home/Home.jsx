@@ -5,17 +5,18 @@ import TextField from "@mui/material/TextField";
 import Appbar from "../../components/Appbar";
 import Logo from "../../assets/UNITE2.png";
 import "../../assets/Wallpaper.css";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export default function Inicio() {
   const navigate = useNavigate();
 
   const keyHandler = (e) => {
     //Esse keycode == 13 é se a tecla apertado do teclado é a de enter!
-    if(e.keyCode == 13){
-      navigate(`/pokemon?nome=${e.target.value}`);
-   }
-  }
+    if (e.keyCode == 13) {
+      var searchedWord = e.target.value;
+      navigate(`/pokemon?nome=${searchedWord.toLowerCase()}`);
+    }
+  };
 
   return (
     <div className="Wallpaper" style={{ backgroundColor: "#0e1116", height: "100vh" }}>
@@ -35,7 +36,7 @@ export default function Inicio() {
         <TextField
           inputProps={{ style: { color: "white" } }}
           InputLabelProps={{ style: { color: "white" } }}
-          style={{ borderBottom: "1px solid white", marginTop:"1em" }}
+          style={{ borderBottom: "1px solid white", marginTop: "1em" }}
           id="standard-basic"
           label={`Pesquise pelo seu Pokémon`}
           onKeyDown={keyHandler}

@@ -1,8 +1,8 @@
 [
   {
     "name": "charizard",
-    "image":"https://lh5.googleusercontent.com/iwFEWt9vnK5OzxiGP8JexTu9duIGqGIL-zNsErhXpDVGEQAwQq6-kTw2_ZV52AOKJ6BICvypWjs3yXXn1PyI=w2880-h1528",
-    "evolutionImage":"https://lh3.googleusercontent.com/gqvpxnFB-KpI_KtFvzbjpEDqG0UczC1SI3p-QWzvScZ8NVNc6foNAECSBShPC7a3qCNEwO-6EIWfD3Ofut6l=w2880-h1528",
+    "image":"https://scontent-gig2-1.xx.fbcdn.net/v/t1.15752-9/270188949_649129322906327_3457346096498547440_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=zFmXnq2yHcMAX_zkOkt&_nc_ht=scontent-gig2-1.xx&oh=03_AVI3x6l5m1xETcT8_rfwGRVtlYmbXlIHo3BCTnudN-p2sg&oe=61F78D95",
+    "evolutionImage":"https://scontent.fbhz1-1.fna.fbcdn.net/v/t1.15752-9/270086258_1347214985724628_3674991763881092327_n.png?_nc_cat=101&ccb=1-5&_nc_sid=ae9488&_nc_ohc=wFSZ9ERliS4AX_xuxcH&tn=1iIBYYGjoIxZXHPT&_nc_ht=scontent.fbhz1-1.fna&oh=03_AVKc-pDkea2NFixfIuxy0_vaxOYrF3e4dIjmW5UP-qlFdw&oe=61F8D6CD",
     "typeOfDamage": "Attack",
     "class": "All-rounder",
     "pokemonStyleOfDamege": "Melee",
@@ -27,7 +27,7 @@
     "builds":[{
       "name":"Charizard Carry Jungle",
       "description":"Santana, bota aqui depois a descrição, ok?",
-      "image":"https://lh5.googleusercontent.com/w_MYtLktibur1UwGkrcg3F-PUrQmnCBV_-e3Q6md__CiBnXaHnaZlJp8EbbeygwG-GuaXdSTOP7kqx7ENnQj=w2880-h1528-rw",
+      "image":"https://scontent-gig2-1.xx.fbcdn.net/v/t1.15752-9/270124892_320134473177248_1904655553496296193_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=ae9488&_nc_ohc=nddqNvw_dPAAX8REoLh&_nc_ht=scontent-gig2-1.xx&oh=03_AVKFD6wwyj7QmJVFjTaraUDG8HKIRQi4DGWVZyXcAS_R9g&oe=61F7FF86",
       "items":[{
         "name":"muscle band",
         "atributtes":[{

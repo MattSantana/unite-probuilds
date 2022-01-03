@@ -20,7 +20,7 @@ export default function CardBuild(props) {
   return (
     <Card sx={{ maxWidth: 700 }}>
       <CardActionArea>
-        <CardMedia component="img" height="180" src={BuildFoto} />
+        <CardMedia component="img" height="180" src={props.build.image} />
 
         <CardContent sx={{ backgroundColor: "#fe8b25" }}>
           <DialogItem dialogData={dialogItem} handleCloseDialog={handleCloseDialog} />
