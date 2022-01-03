@@ -5,12 +5,14 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Stats from "./Stats/Stats";
+import PokeProfile from "../assets/CharizardInfo.png";
+import EvoLine from "../assets/EvolineCharizard.png"
 
 export default function CardPokemonProfile(props) {
   return (
     <Card sx={{ maxWidth: 420 }}>
       <CardActionArea>
-        <CardMedia sx={{ backgroundColor: "#0e1116" }} component="img" height="400" image={props.pokemonData.image} />
+        <CardMedia sx={{ backgroundColor: "#0e1116" }} component="img" height="400" image={PokeProfile} />
         <CardContent sx={{ backgroundColor: "#0e1116" }}>
           <Typography color="white" textAlign="center" gutterBottom variant="h5" component="div">
             {props.pokemonData.name}
@@ -24,7 +26,7 @@ export default function CardPokemonProfile(props) {
           <Typography textAlign="center" variant="subtitle1" color="white">
             Linha Evolutiva
           </Typography>
-          <img style={{ maxWidth: "30em", marginTop: "1em" }} src={props.pokemonData.evolutionImage} />
+          <img style={{ maxWidth: "30em", marginTop: "1em" }} src={EvoLine} />
           <Typography textAlign="center" variant="subtitle1" color="white">
             Atributos
           </Typography>

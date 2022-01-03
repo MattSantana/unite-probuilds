@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./CardBuild.css";
 import DialogItem from "../Dialogs/DialogItem";
+import BuildFoto from "../../assets/lizard.jpg"
 
 export default function CardBuild(props) {
   const [dialogItem, setDialogItem] = React.useState(null);
@@ -19,7 +20,7 @@ export default function CardBuild(props) {
   return (
     <Card sx={{ maxWidth: 700 }}>
       <CardActionArea>
-        <CardMedia component="img" height="180" src={props.build.image} />
+        <CardMedia component="img" height="180" src={BuildFoto} />
 
         <CardContent sx={{ backgroundColor: "#fe8b25" }}>
           <DialogItem dialogData={dialogItem} handleCloseDialog={handleCloseDialog} />

@@ -1,6 +1,7 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Appbar from "../../components/Appbar";
+import Logo from "../../assets/UNITE2.png";
 
 export default function About() {
   return (
@@ -9,8 +10,8 @@ export default function About() {
       <div style={{ marginTop:'5em', backgroundColor: "#0e1116", height: "100vh" }}>
         <Container xs={{display: 'flex',flexDirection:'Cloumn', justifycontent:'center', height: "100vh", marginTop: "10em" }}>
         
-{/*     <img src={Logo} height="200em" style={{marginTop:'0.8em', display:'flex' }} />      
- */} 
+<img src={Logo} height="200em" style={{marginTop:'0.8em', display:'flex' }} />      
+
 
           <Typography color= 'white' variant="body1" component="body1">
             O UNITE Probuilds é um projeto idealizado por Matheus "Matt"
