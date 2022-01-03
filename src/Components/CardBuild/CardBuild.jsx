@@ -17,27 +17,25 @@ export default function CardBuild(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 700, marginTop: "1em" }}>
+    <Card sx={{ maxWidth: 700 }}>
       <CardActionArea>
-        <CardMedia component="img" height="180" img src={props.build.image} />
+        <CardMedia component="img" height="180" src={props.build.image} />
 
         <CardContent sx={{ backgroundColor: "#fe8b25" }}>
           <DialogItem dialogData={dialogItem} handleCloseDialog={handleCloseDialog} />
-          <DialogItem dialogData={dialogAttack} isAttack handleCloseDialog={handleCloseDialog} />
-          <div style={{ display: "flex", justifyContent: "space-between", flexDirection: "column" }}>
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+          <DialogItem dialogData={dialogAttack} handleCloseDialog={handleCloseDialog} isAttack/>
+          <div className="buildItemContainer">
+            <div className="buildItemRow">
               {/*ítens */}
               {props.build.items.map((item, key) => (
-                <>
-                  <img key={key} src={item.image} alt="item" style={{ width: "60px", height: "60px", margin: "8px " }} onClick={() => setDialogItem(item)} />
-                </>
+                <img key={key} src={item.image} alt="item" className="buildItem" onClick={() => setDialogItem(item)} />
               ))}
             </div>
             <br />
-            <div style={{ display: "flex", justifyContent: "flex-start" }}>
+            <div className="buildItemRow">
               {/*ataques */}
               {props.build.attacks.map((attack, key) => (
-                <img key={key} src={attack.image} alt="attack" style={{ width: "60px", height: "60px", margin: "8px " }} onClick={() => setDialogAttack(attack)} />
+                <img key={key} src={attack.image} alt="attack" className="buildItem" onClick={() => setDialogAttack(attack)} />
               ))}
             </div>
           </div>

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Appbar from "../components/Appbar";
-import CardBuild from "../components/CardBuild/CardBuild";
+import Appbar from "../../components/Appbar";
+import CardBuild from "../../components/CardBuild/CardBuild";
 import Container from "@mui/material/Container";
-import Cardinfo from "../components/CardInfo";
+import CardPokemonProfile from "../../components/CardPokemonProfile";
 import { useSearchParams } from "react-router-dom";
-import allPokemons from "../mockup/pokemons.json";
-import CardSearch from "../components/CardSearch";
-import { Box } from "@mui/system";
+import allPokemons from "../../mockup/pokemons.json";
 import { Typography } from "@mui/material";
 
 export default function Afterclick() {
@@ -32,14 +30,11 @@ export default function Afterclick() {
             display: "flex",
             alignItems: "center",
             marginLeft: "3em",
+            marginTop: "4em",
           }}
         >
-          <Container
-            sx={{
-              marginTop: "4em",
-            }}
-          >
-            <Cardinfo pokemonData={pokemonData} />
+          <Container>
+            <CardPokemonProfile pokemonData={pokemonData} />
           </Container>
 
           <Container
@@ -53,7 +48,12 @@ export default function Afterclick() {
               marginBottom: "10em",
             }}
           >
-            {pokemonData.builds && pokemonData.builds.map((build) => <CardBuild build={build} />)}
+            {pokemonData.builds &&
+              pokemonData.builds.map((build, key) => (
+                <div key={key}>
+                  <CardBuild build={build} />
+                </div>
+              ))}
           </Container>
         </div>
       ) : (

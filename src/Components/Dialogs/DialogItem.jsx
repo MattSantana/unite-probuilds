@@ -9,6 +9,7 @@ import DialogActions from "@mui/material/DialogActions";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import Typography from "@mui/material/Typography";
+import "./DialogItem.css";
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -55,11 +56,11 @@ export default function DialogTip(props) {
         <BootstrapDialogTitle id="customized-dialog-title" onClose={props.handleCloseDialog}>
           {props.dialogData?.name}
         </BootstrapDialogTitle>
-        <DialogContent dividers style={{ display: "flex", justifyContent: "space-evenly" }}>
-          <img style={{ width: "60px", height: "60px", marginRight: "1em" }} src={props.dialogData?.image} alt="" />
+        <DialogContent dividers className="buildItemDialogContainer">
+          <img className="buildItemDialog" src={props.dialogData?.image} alt="" />
           <Typography gutterBottom>{props.dialogData?.description}</Typography>
         </DialogContent>
-        <DialogContent dividers style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <DialogContent dividers className="buildItemDialogContainer">
           {props.isAttack ? (
             <>
               <Typography gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
@@ -68,10 +69,12 @@ export default function DialogTip(props) {
             <>
               <Typography gutterBottom>Atributos:</Typography>
 
-              {props.dialogData?.atributtes?.map((atributte) => (
-                <Typography gutterBottom>
-                  {atributte.type}: {atributte.amount}
-                </Typography>
+              {props.dialogData?.atributtes?.map((atributte, key) => (
+                <div key={key}>
+                  <Typography gutterBottom>
+                    {atributte.type}: {atributte.amount}
+                  </Typography>
+                </div>
               ))}
             </>
           )}

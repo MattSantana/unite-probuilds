@@ -1,7 +1,6 @@
 import { Grid } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
-import Appbar from "../components/Appbar";
+import Appbar from "../../components/Appbar";
 
 export default function About() {
   return (
