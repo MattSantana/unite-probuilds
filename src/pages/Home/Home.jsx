@@ -6,6 +6,7 @@ import Appbar from "../../components/Appbar";
 import Logo from "../../assets/UNITE2.png";
 import "../../assets/Wallpaper.css";
 import { useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
 
 export default function Inicio() {
   const navigate = useNavigate();
@@ -42,6 +43,9 @@ export default function Inicio() {
           onKeyDown={keyHandler}
           fullWidth
         />
+        <Typography variant="subtitle2" style={{ color: "white", textAlign: "center", marginTop: "3em" }}>
+          Nesta versão de teste só consta o Charizard e o Pikachu
+        </Typography>
       </Container>
     </div>
   );

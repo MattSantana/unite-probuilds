@@ -12,6 +12,7 @@
 }
 .buildItemRow {
   display: flex;
+  flex-wrap: wrap;
 }
 .buildItem {
   width: 60px;

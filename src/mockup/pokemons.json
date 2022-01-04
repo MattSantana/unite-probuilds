@@ -26,7 +26,7 @@
     ],
     "builds":[{
       "name":"Charizard Carry Jungle",
-      "description":"Santana, bota aqui depois a descrição, ok?",
+      "description":"Charizard é um dos pokémon All-Rounder que possuem uma grande capacidade de carry, graças a seu kit de dano contínuo, regeneração de vida e mobilidade. Tendo em vista que o monstrinho possui um dos maiores 'Power spikes' do jogo, ao alcançar a sua evolução final, o presente guia é constituído de forma a maximizar o potencial de carry e scaling deste Pokémon, caso você curta jogar com ele! Sendo assim, é necessário entender que em Pokémon UNITE, existem Pokémon com fases de scaling diferentes. Isso quer dizer que haverá aqueles que são fortes no início da partida, os que são forte no meio da partida, e o que ficam forte mais para o final da partida. No caso de Charizard, ele é um dos que ficam fortes do meio para o final da partida, e é por isso que ao jogar com o personagem na jungle (rota do meio), você irá garantir um scaling mais tranquilo para este Pokémon. Os Held Itens escolhidos para essa build, maximizam o potencial de carry de Charizard, aumentando seu dano, velocidade de ataque, resistência e também diminuindo o tempo de recarga de suas habilidades e ultimate. Sendo assim, caso o treinador tenha um bom controle de 'farm' dos seus campos da jungle, é quase que garantido que em toda rotação você tenha sua ultimate novamente. Além disso, a escolha de movesets foi feita levando em consideração o período 'sem ultimate' de Charizard. Graças a essa escolha de skills, será possível aplicar dano, sem que você tenha que se expor muito para fazê-lo.",
       "image":"https://i.imgur.com/tSbR2wT.jpeg",
       "items":[{
         "name":"muscle band",
@@ -83,6 +83,82 @@
           "image":"https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Fire%20Blast.png",
           "description":"Charizard lança uma rajada de fogo em forma de '大' para atacar, que causa dano contínuo e cria um círculo no solo que fere os oponentes e diminui a sua velocidade por um curto período. No nível 13 este golpe sofre um upgrade, aumentando o dano causado.",
           "reloadTime":"6.5s"
+        }
+      ]}
+    ]
+  },
+  {
+    "name": "pikachu",
+    "image":"https://i.imgur.com/LOXGTHH.png",
+    "evolutionImage":null,
+    "typeOfDamage": "Attack",
+    "class": "All-rounder",
+    "pokemonStyleOfDamege": "Melee",
+    "status":[
+      {
+        "type":"attack",
+        "rating":3.5
+      },{
+        "type":"resistence",
+        "rating":3
+      },{
+        "type":"mobility",
+        "rating":2.5
+      },{
+        "type":"scoring",
+        "rating":3
+      },{
+        "type":"support",
+        "rating":0.5
+      }
+    ],
+    "builds":[{
+      "name":"Charizard Carry Jungle",
+      "description":"Charizard é um dos pokémon All-Rounder que possuem uma grande capacidade de carry, graças a seu kit de dano contínuo, regeneração de vida e mobilidade. Tendo em vista que o monstrinho possui um dos maiores 'Power spikes' do jogo, ao alcançar a sua evolução final, o presente guia é constituído de forma a maximizar o potencial de carry e scaling deste Pokémon, caso você curta jogar com ele! Sendo assim, é necessário entender que em Pokémon UNITE, existem Pokémon com fases de scaling diferentes. Isso quer dizer que haverá aqueles que são fortes no início da partida, os que são forte no meio da partida, e o que ficam forte mais para o final da partida. No caso de Charizard, ele é um dos que ficam fortes do meio para o final da partida, e é por isso que ao jogar com o personagem na jungle (rota do meio), você irá garantir um scaling mais tranquilo para este Pokémon. Os Held Itens escolhidos para essa build, maximizam o potencial de carry de Charizard, aumentando seu dano, velocidade de ataque, resistência e também diminuindo o tempo de recarga de suas habilidades e ultimate. Sendo assim, caso o treinador tenha um bom controle de 'farm' dos seus campos da jungle, é quase que garantido que em toda rotação você tenha sua ultimate novamente. Além disso, a escolha de movesets foi feita levando em consideração o período 'sem ultimate' de Charizard. Graças a essa escolha de skills, será possível aplicar dano, sem que você tenha que se expor muito para fazê-lo.",
+      "image":"https://i.imgur.com/yXPaAon_d.webp?maxwidth=760&fidelity=grand",
+      "items":[{
+        "name":"muscle band",
+        "atributtes":[{
+          "type":"Ataque",
+          "amount":15
+          },{
+          "type":"Velocidade de ataque",
+          "amount":"7,5%"
+        }],
+        "description":"Quando o ataque básico acerta, o dano é aumentado em 3% do HP restante do Pokémon oponente.",
+        "type":"helditem",
+        "image":"https://static.wixstatic.com/media/89a8c9_dfe725af6eba4ea989ce2298f02ac812~mv2.png/v1/fill/w_262,h_262,al_c,lg_1,q_95/89a8c9_dfe725af6eba4ea989ce2298f02ac812~mv2.webp"
+      },
+      {
+        "name":"shell bell",
+        "atributtes":[{
+          "type":"Ataque",
+          "amount":24
+          },{
+          "type":"Redução de tempo de recarga",
+          "amount":"4,5%"
+        }],
+        "description":"Quando o Pokémon ataca com uma habilidade/movimento, ele recupera um mínimo de 75 de HP. Quanto maior o Sp. Atk. do Pokémon, mais HP ele recupera.",
+        "type":"helditem",
+        "image":"https://static.wixstatic.com/media/89a8c9_c8271b3f1c6545a6ad1ec071d98ac2a6~mv2.png/v1/fill/w_244,h_244,al_c,q_95/89a8c9_c8271b3f1c6545a6ad1ec071d98ac2a6~mv2.webp"
+      }],
+      "attacks":[{
+        "name":"Thundershock",
+        "image":"https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Flame%20Burst.png",
+        "description":"Charizard cospe uma bola de fogo para atacar seus oponentes, fazendo com que o pokémon atingido receba o efeito de queimação. PS: Ao atingir o nível 5, o treinador poderá substituir o Flame Burst por: Flamethrower ou Fire Punch. ",
+        "reloadTime":"6s"
+        },
+        {
+          "name":"Electro Web",
+          "image":"https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Flamethrower.png",
+          "description":"Charizard dispara uma coluna de fogo para atacar, fazendo com que o pokémon atingido receba o efeito de queimação. No nível 11, este ataque recebe um upgrade, aumentando o dano causado pelo golpe e pela queimadura.",
+          "reloadTime":"5.5s"
+        },
+        {
+          "name":"Thunderbolt",
+          "image":"https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Fire%20Punch.png",
+          "description":"Charizard envolve seu punho em fogo para atacar, causando o efeito de queimação em seu alvo. Alémd isso, os pokémon que já estiverem queimados sofrerão mais danos quando golpeados. No nível 11, este movimento sofrerá um upgrade, que terá o tempo de recarga diminuído através do uso de ataques básicos.",
+          "reloadTime":"6s"
         }
       ]}
     ]

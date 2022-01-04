@@ -18,7 +18,7 @@ export default function CardBuild(props) {
   };
 
   return (
-    <Card sx={{ maxWidth: 700 }}>
+    <Card sx={{ maxWidth: 450 }}>
       <CardActionArea>
         <CardMedia component="img" height="180" src={props.build.image} />
 
