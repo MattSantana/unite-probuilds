@@ -12,10 +12,12 @@ export default function CardBuild(props) {
   const [dialogItem, setDialogItem] = React.useState(null);
   const [dialogAttack, setDialogAttack] = React.useState(null);
 
+  
   const handleCloseDialog = () => {
     setDialogItem(null);
     setDialogAttack(null);
   };
+
 
   return (
     <Card sx={{ maxWidth: 450 }}>
@@ -23,20 +25,20 @@ export default function CardBuild(props) {
         <CardMedia component="img" height="180" src={props.build.image} />
 
         <CardContent sx={{ backgroundColor: "#fe8b25" }}>
-          <DialogItem dialogData={dialogItem} handleCloseDialog={handleCloseDialog} />
-          <DialogItem dialogData={dialogAttack} handleCloseDialog={handleCloseDialog} isAttack/>
+          <DialogItem dialogData={dialogItem} />
+          <DialogItem dialogData={dialogAttack} isAttack/>
           <div className="buildItemContainer">
             <div className="buildItemRow">
               {/*ítens */}
               {props.build.items.map((item, key) => (
-                <img key={key} src={item.image} alt="item" className="buildItem" onClick={() => setDialogItem(item)} />
+                <img key={key} src={item.image} alt="item" className="buildItem"  onMouseEnter={() => setDialogItem(item)} onMouseLeave={() => handleCloseDialog(item)} />
               ))}
             </div>
             <br />
             <div className="buildItemRow">
               {/*ataques */}
               {props.build.attacks.map((attack, key) => (
-                <img key={key} src={attack.image} alt="attack" className="buildItem" onClick={() => setDialogAttack(attack)} />
+                <img key={key} src={attack.image} alt="attack" className="buildItem" onMouseEnter={() => setDialogAttack(attack)} onMouseLeave={() => handleCloseDialog(attack)} />
               ))}
             </div>
           </div>

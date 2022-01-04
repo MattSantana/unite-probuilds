@@ -80,11 +80,7 @@ export default function DialogTip(props) {
             </>
           )}
         </DialogContent>
-        <DialogActions className='dialogActions'>
-          <Button autoFocus onClick={props.handleCloseDialog}>
-            Entendi
-          </Button>
-        </DialogActions>
+        
       </BootstrapDialog>
       
     </>
