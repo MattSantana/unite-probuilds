@@ -24,7 +24,8 @@ const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
 
   return (
-    <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+    
+    <DialogTitle className='dialogTitle' sx={{ m: 0, p: 2 }} {...other}>
       {children}
       {onClose ? (
         <IconButton
@@ -56,14 +57,14 @@ export default function DialogTip(props) {
         <BootstrapDialogTitle id="customized-dialog-title" onClose={props.handleCloseDialog}>
           {props.dialogData?.name}
         </BootstrapDialogTitle>
-        <DialogContent dividers className="buildItemDialogContainer">
+        <DialogContent sx={{border: 'none'}} dividers className="buildItemDialogContainer">
           <img className="buildItemDialog" src={props.dialogData?.image} alt="" />
           <Typography gutterBottom>{props.dialogData?.description}</Typography>
         </DialogContent>
-        <DialogContent dividers className="buildItemDialogContainer">
+        <DialogContent sx={{border: 'none'}} dividers className="buildItemDialogContainer">
           {props.isAttack ? (
             <>
-              <Typography gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
+              <Typography  gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
             </>
           ) : (
             <>
@@ -71,7 +72,7 @@ export default function DialogTip(props) {
 
               {props.dialogData?.atributtes?.map((atributte, key) => (
                 <div key={key}>
-                  <Typography gutterBottom>
+                  <Typography  gutterBottom>
                     {atributte.type}: {atributte.amount}
                   </Typography>
                 </div>
@@ -79,12 +80,13 @@ export default function DialogTip(props) {
             </>
           )}
         </DialogContent>
-        <DialogActions>
+        <DialogActions className='dialogActions'>
           <Button autoFocus onClick={props.handleCloseDialog}>
             Entendi
           </Button>
         </DialogActions>
       </BootstrapDialog>
+      
     </>
   );
 }

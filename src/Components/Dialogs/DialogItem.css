@@ -1,9 +1,21 @@
 .buildItemDialogContainer {
   display: flex;
   justify-content: space-evenly;
-}
+  background-color: #32245f;
+  color:white
+ }
 .buildItemDialog {
   width: 60px;
   height: 60px;
   margin-right: 1em;
+}
+.dialogTitle{
+  background-color: #32245f;
+  border-top-left-radius: 2em;
+  border-color: #7c54ff;
+  color: white;
+}
+.dialogActions{
+  background-color: #32245f;
+  border-bottom-right-radius: 2em;
 }
