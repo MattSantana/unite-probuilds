@@ -103,22 +103,16 @@
             "reloadTime": "6s"
           },
           {
-            "name": "Flamethrower",
-            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Flamethrower.png",
-            "description": "Charizard dispara uma coluna de fogo para atacar, fazendo com que o pokémon atingido receba o efeito de queimação. No nível 11, este ataque recebe um upgrade, aumentando o dano causado pelo golpe e pela queimadura.",
-            "reloadTime": "5.5s"
-          },
-          {
-            "name": "Fire Punch",
-            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Fire%20Punch.png",
-            "description": "Charizard envolve seu punho em fogo para atacar, causando o efeito de queimação em seu alvo. Alémd isso, os pokémon que já estiverem queimados sofrerão mais danos quando golpeados. No nível 11, este movimento sofrerá um upgrade, que terá o tempo de recarga diminuído através do uso de ataques básicos.",
-            "reloadTime": "6s"
-          },
-          {
             "name": "Fire Spin",
             "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Fire%20Spin.png",
             "description": "Charizard explode um círculo de fogo em torno do alvo, lhe causando dano contínuo e diminuindo a sua velocidade de movimento por um curto período de tempo. PS: Ao atingir o nível 7, o treinador poderá substituir Fire Spin por: Fire Blast ou Flare Blitz",
             "reloadTime": "10s"
+          },
+          {
+            "name": "Flamethrower",
+            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Charizard/Flamethrower.png",
+            "description": "Charizard dispara uma coluna de fogo para atacar, fazendo com que o pokémon atingido receba o efeito de queimação. No nível 11, este ataque recebe um upgrade, aumentando o dano causado pelo golpe e pela queimadura.",
+            "reloadTime": "5.5s"
           },
           {
             "name": "Fire Blast",
@@ -212,7 +206,7 @@
             "description": "Teletransporta seu Pokémon rapidamente para a direção designada.",
             "type": "Battle Item",
             "image": "https://d275t8dp8rxb42.cloudfront.net/items/battle/Eject+Button.png"
-          }
+          }       
         ],
         "attacks": [
           {
@@ -222,28 +216,16 @@
             "reloadTime": "5s"
           },
           {
-            "name": "Electro Ball",
-            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Pikachu/Electro%20Ball.png",
-            "description": "Pikachu lança uma esfera elétrica, causando dano aos oponentes dentro da área de efeito e deixando-os paralisados (efeito de lentidão) por um curto período de tempo. O dano desse movimento aumenta quanto menos for o HP restante do Pokémon oponente. No nível 11, este ataque recebe um upgrade, aumentando o dano causado pelo golpe.",
-            "reloadTime": "5s"
-          },
-          {
-            "name": "Thunder",
-            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Pikachu/Thunder.png",
-            "description": "Pikachu lança raios poderosos em uma área designada, causando dano na área de efeito. No nível 11, este movimento sofrerá um upgrade, que aumentará o número de vezes que este ataque atinge.",
-            "reloadTime": "8s"
-          },
-          {
             "name": "Electro Web",
             "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Pikachu/Electro%20Web.png",
             "description": " Pikachu ataca e prende os Pokémon adversários usando uma rede elétrica, impedindo-os de se mover. PS: Ao atingir o nível 6, o treinador poderá substituir o Electro Web por: Volt Tackle ou Thunderbolt.",
             "reloadTime": "9s"
           },
           {
-            "name": "Volt Tackle",
-            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Pikachu/Volt%20Tackle.png",
-            "description": "Pikachu ataca seus oponentes, tornando-se imparável ao mesmo tempo que aplica seu dano e atordoa seu alvo. No nível 13, este movimento sofrerá um upgrade, que diminuirá o tempo de recarga da habilidade em 2 segundos.",
-            "reloadTime": "10s"
+            "name": "Thunder",
+            "image": "https://d275t8dp8rxb42.cloudfront.net/skills/Pikachu/Thunder.png",
+            "description": "Pikachu lança raios poderosos em uma área designada, causando dano na área de efeito. No nível 11, este movimento sofrerá um upgrade, que aumentará o número de vezes que este ataque atinge.",
+            "reloadTime": "8s"
           },
           {
             "name": "Thunderbolt",
@@ -256,3 +238,8 @@
     ]
   }
 ]
+
+
+
+
+ 

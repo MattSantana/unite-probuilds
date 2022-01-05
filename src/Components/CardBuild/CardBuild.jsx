@@ -14,6 +14,7 @@ export default function CardBuild(props) {
   const [dialogData, setDialogData] = useState(null);
 
   const dialogHandler = (data) => {
+    console.log(data)
     setShowDialog(!showDialog);
     setDialogData(data);
   };
@@ -33,8 +34,8 @@ export default function CardBuild(props) {
           <div className="buildItemContainer">
             <div className="buildItemRow">
               {/*ítens */}
-              {props.build.items.map((item, key) => (
-                <img key={key} src={item.image} alt="item" className="buildItem" onMouseEnter={!isMobile ? () => dialogHandler(item) : null} onClick={isMobile ? () => dialogHandler(item) : null} />
+              {props.build.items.map((item) => (
+                <img key={item.name} src={item.image} alt="item" className="buildItem" onMouseEnter={!isMobile ? () => dialogHandler(item) : null} onClick={isMobile ? () => dialogHandler(item) : null} />
               ))}
             </div>
             <br />

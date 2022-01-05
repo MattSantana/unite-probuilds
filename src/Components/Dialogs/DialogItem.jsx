@@ -52,19 +52,41 @@ BootstrapDialogTitle.propTypes = {
 export default function DialogTip(props) {
   return (
     <div>
-      <BootstrapDialog aria-labelledby="customized-dialog-title" open={props.showDialog}>
+      <BootstrapDialog
+        aria-labelledby="customized-dialog-title"
+        open={props.showDialog}
+      >
         <div onMouseLeave={props.closeDialog}>
-          <BootstrapDialogTitle id="customized-dialog-title" onClose={props.closeDialog}>
-            {props.dialogData?.name}
+          <BootstrapDialogTitle
+            id="customized-dialog-title"
+            onClose={props.closeDialog}
+          >
+            {!props.dialogData === null ? props.dialogData.name : null}
           </BootstrapDialogTitle>
-          <DialogContent sx={{ border: "none" }} dividers className="buildItemDialogContainer" >
-            <img className="buildItemDialog" src={props.dialogData?.image} alt="" />
-            <Typography gutterBottom>{props.dialogData?.description}</Typography>
+          <DialogContent
+            sx={{ border: "none" }}
+            dividers
+            className="buildItemDialogContainer"
+          >
+            <img
+              className="buildItemDialog"
+              src={props.dialogData?.image}
+              alt=""
+            />
+            <Typography gutterBottom>
+              {props.dialogData?.description}
+            </Typography>
           </DialogContent>
-          <DialogContent sx={{ border: "none" }} dividers className="buildItemDialogContainer">
-            {!props.dialogData?.atributtes ? (
+          <DialogContent
+            sx={{ border: "none" }}
+            dividers
+            className="buildItemDialogContainer"
+          >
+            {props.dialogData?.atributtes === undefined ? (
               <>
-                <Typography gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
+                <Typography gutterBottom>
+                  Reload Time: {props.dialogData?.reloadTime}
+                </Typography>
               </>
             ) : (
               <>

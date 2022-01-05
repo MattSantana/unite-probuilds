@@ -24,7 +24,7 @@ export default function Afterclick() {
     <div style={{ backgroundColor: "#0E1116" }}>
       <Appbar />
       {pokemonData ? (
-        <Container maxWidth="xg" style={{ marginTop: "5em" }}>
+        <Container maxWidth="xg" style={{ marginTop:'6em'}}>
           <Grid container spacing={5}>
             <Grid item xs={12} sm={4}>
               <CardPokemonProfile pokemonData={pokemonData} />

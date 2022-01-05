@@ -12,8 +12,8 @@ export default function CardPokemonProfile(props) {
   return (
     <Card sx={{ maxWidth: 420 }}>
       <CardActionArea>
-        <CardMedia sx={{ backgroundColor: "#0e1116" }} component="img" height="400" image={props.pokemonData.image} />
-        <CardContent sx={{ backgroundColor: "#0e1116" }}>
+        <CardMedia sx={{ backgroundColor: "#eadfd4", border:'none' }} component="img" height="400" image={props.pokemonData.image} />
+        <CardContent sx={{ backgroundColor: "#e37c21", border: '1em' }}>
           <Typography color="white" textAlign="center" gutterBottom variant="h5" component="div">
             {props.pokemonData.name}
           </Typography>

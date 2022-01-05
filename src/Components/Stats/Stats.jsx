@@ -12,7 +12,7 @@ export default function Stats(props) {
         <Rating
           name="simple-controlled"
           value={parseFloat(props.rating)}
-          readOnly
+          readOnly={true}
         />
       )}
     </div>
