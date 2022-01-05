@@ -24,8 +24,7 @@ const BootstrapDialogTitle = (props) => {
   const { children, onClose, ...other } = props;
 
   return (
-    
-    <DialogTitle className='dialogTitle' sx={{ m: 0, p: 2 }} {...other}>
+    <DialogTitle className="dialogTitle" sx={{ m: 0, p: 2 }} {...other}>
       {children}
       {onClose ? (
         <IconButton
@@ -52,37 +51,35 @@ BootstrapDialogTitle.propTypes = {
 
 export default function DialogTip(props) {
   return (
-    <>
-      <BootstrapDialog aria-labelledby="customized-dialog-title" open={props.dialogData !== null}>
-        <BootstrapDialogTitle id="customized-dialog-title" onClose={props.handleCloseDialog}>
-          {props.dialogData?.name}
-        </BootstrapDialogTitle>
-        <DialogContent sx={{border: 'none'}} dividers className="buildItemDialogContainer">
-          <img className="buildItemDialog" src={props.dialogData?.image} alt="" />
-          <Typography gutterBottom>{props.dialogData?.description}</Typography>
-        </DialogContent>
-        <DialogContent sx={{border: 'none'}} dividers className="buildItemDialogContainer">
-          {props.isAttack ? (
-            <>
-              <Typography  gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
-            </>
-          ) : (
-            <>
-              <Typography gutterBottom>Atributos:</Typography>
-
-              {props.dialogData?.atributtes?.map((atributte, key) => (
-                <div key={key}>
-                  <Typography  gutterBottom>
-                    {atributte.type}: {atributte.amount}
-                  </Typography>
-                </div>
-              ))}
-            </>
-          )}
-        </DialogContent>
-        
+    <div>
+      <BootstrapDialog aria-labelledby="customized-dialog-title" open={props.showDialog}>
+        <div onMouseLeave={props.closeDialog}>
+          <BootstrapDialogTitle id="customized-dialog-title" onClose={props.closeDialog}>
+            {props.dialogData?.name}
+          </BootstrapDialogTitle>
+          <DialogContent sx={{ border: "none" }} dividers className="buildItemDialogContainer" >
+            <img className="buildItemDialog" src={props.dialogData?.image} alt="" />
+            <Typography gutterBottom>{props.dialogData?.description}</Typography>
+          </DialogContent>
+          <DialogContent sx={{ border: "none" }} dividers className="buildItemDialogContainer">
+            {!props.dialogData?.atributtes ? (
+              <>
+                <Typography gutterBottom>Reload Time: {props.dialogData?.reloadTime}</Typography>
+              </>
+            ) : (
+              <>
+                {props.dialogData?.atributtes?.map((atributte, key) => (
+                  <div key={key}>
+                    <Typography gutterBottom>
+                      {atributte.type}: {atributte.amount}
+                    </Typography>
+                  </div>
+                ))}
+              </>
+            )}
+          </DialogContent>
+        </div>
       </BootstrapDialog>
-      
-    </>
+    </div>
   );
 }

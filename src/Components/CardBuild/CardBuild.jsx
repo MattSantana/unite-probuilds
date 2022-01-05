@@ -6,18 +6,22 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./CardBuild.css";
 import DialogItem from "../Dialogs/DialogItem";
-import BuildFoto from "../../assets/lizard.jpg"
+import { useState } from "react";
+import { isMobile } from "react-device-detect";
 
 export default function CardBuild(props) {
-  const [dialogItem, setDialogItem] = React.useState(null);
-  const [dialogAttack, setDialogAttack] = React.useState(null);
+  const [showDialog, setShowDialog] = useState(false);
+  const [dialogData, setDialogData] = useState(null);
 
-  
-  const handleCloseDialog = () => {
-    setDialogItem(null);
-    setDialogAttack(null);
+  const dialogHandler = (data) => {
+    setShowDialog(!showDialog);
+    setDialogData(data);
   };
 
+  const closeDialog = () => {
+    setShowDialog(false);
+    setTimeout(() => setDialogData(null), 100);
+  };
 
   return (
     <Card sx={{ maxWidth: 450 }}>
@@ -25,20 +29,19 @@ export default function CardBuild(props) {
         <CardMedia component="img" height="180" src={props.build.image} />
 
         <CardContent sx={{ backgroundColor: "#fe8b25" }}>
-          <DialogItem dialogData={dialogItem} />
-          <DialogItem dialogData={dialogAttack} isAttack/>
+          <DialogItem dialogData={dialogData} showDialog={showDialog} closeDialog={closeDialog} />
           <div className="buildItemContainer">
             <div className="buildItemRow">
               {/*ítens */}
               {props.build.items.map((item, key) => (
-                <img key={key} src={item.image} alt="item" className="buildItem"  onMouseEnter={() => setDialogItem(item)} onMouseLeave={() => handleCloseDialog(item)} />
+                <img key={key} src={item.image} alt="item" className="buildItem" onMouseEnter={!isMobile ? () => dialogHandler(item) : null} onClick={isMobile ? () => dialogHandler(item) : null} />
               ))}
             </div>
             <br />
             <div className="buildItemRow">
               {/*ataques */}
               {props.build.attacks.map((attack, key) => (
-                <img key={key} src={attack.image} alt="attack" className="buildItem" onMouseEnter={() => setDialogAttack(attack)} onMouseLeave={() => handleCloseDialog(attack)} />
+                <img key={key} src={attack.image} alt="attack" className="buildItem" onMouseEnter={() => dialogHandler(attack)} onClick={isMobile ? () => dialogHandler(attack) : null} />
               ))}
             </div>
           </div>
